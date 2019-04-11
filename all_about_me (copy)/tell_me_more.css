@@ -1,0 +1,19 @@
+main{
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.personal-details {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 6px;
+  margin: 6px 0;
+}
+
+label {
+  text-align: left;
+}

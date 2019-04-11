@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me!</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li> |
+        <li><a class="active" href="contact.html">Contact Me</a></li> |
+        <li><a href="tell_me_more.html">Tell Me More</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Use this form to Contact Me!</h1>
+      <form
+        action="https://formspree.io/nat8781@gmail.com"
+        method="POST"
+      >
+        <div>
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="off"
+          >
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            rows="10"
+            cols="100"
+            id="message"
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+        <input type="reset">
+      </form>
+    </main>
+  </body>
+</html>

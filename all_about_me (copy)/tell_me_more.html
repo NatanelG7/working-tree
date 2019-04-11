@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tell Me More</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a class="active" href="tell_me_more.html">Tell Me More</a></li>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="shared.css">
+        <link rel="stylesheet" href="tell_me_more.css">
+      </ul>
+    </nav>
+    <main>
+      <h1>All About You!</h1>
+      <form action="https://formspree.io/nat8781@gmail.com"
+      method="POST">
+        <div class="personal-details">
+          <ul>
+            <li><label for="firstname">First Name</label></li>
+            <input type="text" name="firstname" id="firstname" placeholder="Some">
+            <li><label for="lastname">Last Name</label></li>
+            <input type="text" name="lastname" id="lastname" placeholder="Guy">
+            <li><label for="email">Email</label></li>
+            <input type="email" name="email" id="email" placeholder="some@guy.com">
+            <li><label for="birthday">Date of Birth</label></li>
+            <input type="date" name="birthday" id="birthday">
+          </ul>
+        </div>
+        <br>
+        <div>
+          <label for="slider">How Much Do You Like to Code?</label>
+          <input type="range" name="slider" id="slider">
+        </div>
+        <br>
+        <div>
+          <label>Skills (check any that apply)</label>
+          <input type="checkbox" name="HTML" value="true" id="html">
+          <label for="html">HTML</label>
+          <input type="checkbox" name="CSS" value="true" id="css">
+          <label for="css">CSS</label>
+          <input type="checkbox" name="Git" value="true" id="git">
+          <label for="git">Git</label>
+        </div>
+        <br>
+        <div>
+          <label for="dropdown">Favorite Language</label>
+          <select name="dropdown" id="dropdown">
+            <option value="" selected>Select a language</option>
+            <option value="Ruby">Ruby</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="datalist">Favorite Browser</label>
+          <input list="browsers" id="datalist">
+          <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </div>
+        <br>
+        <div>
+          <label>White Space:</label>
+          <input type="radio" name="tabs" value="tabs" id="tabs">
+          <label for="tabs">Tabs</label>
+          <input type="radio" name="spaces" value="spaces" checked id="spaces">
+          <label for="spaces">Spaces</label>
+        </div>
+        <br>
+        <div>
+          <label for="numbers">How Many Spaces Should a Tab Represent?</label>
+          <input type="number" name="numbers" value="2" id="numbers">
+        </div>
+        <br>
+        <div>
+          <label for="colors">Favorite Web Color</label>
+          <input type="color" name="colors" id="colors">
+        </div>
+        <br>
+        <button type="submit" name="button">Send</button>
+        <input type="reset">
+      </form>
+    </main>
+  </body>
+</html>
